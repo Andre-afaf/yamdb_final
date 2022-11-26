@@ -1,7 +1,7 @@
 ![Yamdb Workflow Status](https://github.com/Andre-afaf/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 # YaMDB
 ## Учебный проект рейтингового сайта
-
+Проект должен был быть доступен тут http://84.201.173.57:8000/, но web контейнер не запускается по непонятной причине
 
 
 ### Технологии
