@@ -62,10 +62,10 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo systemctl stop nginx
-            sudo systemctl stop gunicorn
             sudo docker-compose stop
             sudo docker-compose down -v
             rm .env
+          # если не удалять, то переменные окружения дублируются внутри файла при каждом пуше
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
@@ -74,7 +74,6 @@ jobs:
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
             sudo docker-compose up -d 
-            sudo docker cp /home/${{ secrets.DOCKER_USERNAME }}/redoc.yaml nginx:/var/html/static/redoc.yaml
 
   send_message:
     runs-on: ubuntu-latest

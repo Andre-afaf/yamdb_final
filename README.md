@@ -1,7 +1,7 @@
-ReadMe
+![Yamdb Workflow Status](https://github.com/Andre-afaf/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 # YaMDB
 ## Учебный проект рейтингового сайта
-
+http://62.84.115.180/api/v1/auth/signup/
 
 
 ### Технологии
@@ -21,20 +21,7 @@ ReadMe
 - В папке с файлом manage.py выполните команду:
 ' python3 manage.py runserver ' 
 
-### шаблон наполнения env-файла:
-- DB_ENGINE=django.db.backends.postgresql # указать, что работаем с postgresql
-- DB_NAME=postgres # имя БД
-- POSTGRES_USER=postgres # имя пользователя БД
-- POSTGRES_PASSWORD=postgres # пароль для БД (необходимо указать свой)
-- DB_HOST=db # название контейнера БД
-- DB_PORT=5432 # порт для подключения к БД
-
 ### Авторы
 Nikita Feyuk
 Igor Polyakov
 Andrey Rodin
-
-### Проект развернут по адресу
-http://62.84.115.127/
-
-https://github.com/freneek/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
